@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ryan's Trip to Peru (What to do)</title>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+    </head>
+
+    <header>
+        <div class="nav-bar">
+            <span><a href="home.html">Home</a> </span>
+            <span><a href="page2.html">Recommend our next trip</a> </span>
+            <span><a href="page3.html">What to do in Peru</a> </span>
+            <span><a href="page4.html">Photos from our trip</a> </span>
+        </div>
+    </header>
+
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Where Should We Travel Next?</legend>
+
+            <div class="parent">
+                <div class="first-name">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div class="last-name">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div class="destination">
+                    <label for="destination">Where should we go next?</label>
+                    <input type="text" id="destination" name="destination">
+                </div>
+
+                <div class="international">
+                    <p>Does this destination require international travel?</p>
+                    <div>
+                        <label for="yes">Yes</label>
+                        <input type="checkbox" id="yes" name="yes">
+                    </div>
+                        <label for="no">No</label>
+                        <input type="checkbox" id="no" name="no">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label for="why-travel-here">Why should we travel here?</label>
+                <textarea id="why-travel-here" name="why-go-here" placeholder="500 characters max" maxlength="500"></textarea>
+            </div>
+        </fieldset>
+
+    </form>
+</html>

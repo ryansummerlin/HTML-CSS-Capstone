@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Ryan's Trip to Peru (What to do)</title>
+        <title>Ryan's Trip to Peru (Where should we go next?)</title>
         <link rel="stylesheet" type="text/css" href="layout.css">
     </head>
 
@@ -17,44 +17,46 @@
 
     <form action="/form-handling-url" method="post">
         <fieldset>
-            <legend>Where Should We Travel Next?</legend>
+            <legend><strong>Where Should We Travel Next?</strong></legend>
 
             <div class="parent">
                 <div class="first-name">
-                    <label for="firstName">First name</label>
-                    <input type="text" id="firstName" name="first_name">
+                    <label class="label" for="firstName">First name:</label>
+                    <input class="text-input" type="text" id="firstName" name="first_name">
                 </div>
 
                 <div class="last-name">
-                    <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="last_name">
+                    <label class="label" for="lastName">Last name:</label>
+                    <input class="text-input" type="text" id="lastName" name="last_name">
                 </div>
 
                 <div class="email">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" name="email_address">
+                    <label class="label" for="email">Email address:</label>
+                    <input class="text-input" type="email" id="email" name="email_address">
                 </div>
 
                 <div class="destination">
-                    <label for="destination">Where should we go next?</label>
-                    <input type="text" id="destination" name="destination">
+                    <label class="label" for="destination">Where should we go next?</label>
+                    <input class="text-input" type="text" id="destination" name="destination">
                 </div>
 
                 <div class="international">
-                    <p>Does this destination require international travel?</p>
-                    <div>
-                        <label for="yes">Yes</label>
-                        <input type="checkbox" id="yes" name="yes">
-                    </div>
-                        <label for="no">No</label>
-                        <input type="checkbox" id="no" name="no">
-                    <div>
+                    <p class="yes-no-label">Does this destination require international travel?</p>
+                    <div class="yes-no">
+                        <span class="yes-box">
+                            <label for="yes">Yes</label>
+                            <input type="checkbox" id="yes" name="yes">
+                        </span>
 
+                        <span class="no-box">
+                            <label for="no">No</label>
+                            <input type="checkbox" id="no" name="no">
+                        </span>
                     </div>
                 </div>
 
-                <div>
-                    <label for="why-travel-here">Why should we travel here?</label>
+                <div class="why-travel-here">
+                    <label class="label" for="why-travel-here">Why should we travel here?</label>
                     <textarea id="why-travel-here" name="why-go-here" placeholder="500 characters max" maxlength="500"></textarea>
                 </div>
 

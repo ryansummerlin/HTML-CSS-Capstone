@@ -24,6 +24,23 @@ h1, h2{
     background-color: #70798C;
 }
 
+.salkantay2-img{
+    width: 300px;
+    position: absolute;
+    margin-left: -22%;
+}
+
+.ryan-fish-img{
+    width: 306px;
+    position: absolute;
+    margin-left: 50%;
+    bottom: -500px;
+}
+
+.h2{
+    margin: 30px;
+}
+
 fieldset{
     margin-top: 40px;
 }
@@ -102,7 +119,7 @@ li{
     margin-right: -40%;
     display: grid;
     grid-template-rows: 50% 50%;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .salkantay{
@@ -118,4 +135,30 @@ li{
 .machu-picchu1{
     grid-column: 3 / 4;
     grid-row: 1 /2;
+}
+
+.rainbow-mountain, .red-valley{
+    padding-left: 25px;
+}
+
+.huayhuash2{
+    padding-top: 25px;
+}
+
+.red-valley-label{
+    margin-left: 46px;
+}
+
+.laguna69-label, .machu-picchu1-label{
+    margin-left: 105px;
+}
+
+.salkantay-label{
+    margin-left: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
